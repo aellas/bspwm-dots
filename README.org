@@ -5,3 +5,15 @@
 
 [[./assets/screen.png]]
 
+* Software
+- Distro: Artix
+- Init: OpenRC
+- Display Server: Xlibre
+- Bar: Polybar
+- Notifications: Dunst
+- WM: BSPWM
+- Editor: Doom Emacs
+- File-manager: Yazi / Nemo
+- Launcher: Rofi
+- Terminal: Kitty
+

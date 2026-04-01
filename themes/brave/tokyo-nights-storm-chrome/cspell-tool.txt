@@ -1,4 +1,0 @@
-tmux
-nvim
-Presence
-Presence

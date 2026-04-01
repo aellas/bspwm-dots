@@ -8,45 +8,4 @@
 
 This repository contains my personal dotfiles for managing system configurations across various applications and environments. The configurations are designed to be deployed using GNU Stow for easy management and portability.
 
-* Contents
-
-** Configuration Files (~.config/~)
-Application-specific configurations stored in the standard XDG configuration directory.
-
-** Themes (~.themes/~)
-- =Tokyonight-Dark=: A dark theme with Tokyo Night colour scheme
-
-** Shell Configuration
-- =.zshrc=: Zsh shell configuration
-- =.tmux.conf=: Tmux terminal multiplexer configuration
-
-** Customization
-- =discord/=: Discord client customizations
-- =wallpapers/=: Collection of wallpapers
-
-* Installation
-
-** Prerequisites
-- GNU Stow
-- Git
-
-** Clone the Repository
-
-#+BEGIN_SRC bash
-git clone https://codeberg.org/lxde/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-#+END_SRC
-
-** Deploy Configurations
-
-Use GNU Stow to symlink the configurations to your home directory:
-
-#+BEGIN_SRC bash
-# Deploy all configurations
-stow .
-
-# Or deploy specific configurations
-stow -t ~ .config
-stow -t ~ .themes
-#+END_SRC
 

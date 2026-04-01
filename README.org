@@ -2,7 +2,7 @@
 #+AUTHOR: lxde
 #+OPTIONS: toc:2 num:nil
 
-![Image](/assets/screen.png?raw=true "Screen")
+[[./assets/screen.png]]
 
 * Overview
 

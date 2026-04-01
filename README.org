@@ -3,9 +3,3 @@
 #+OPTIONS: toc:2 num:nil
 
 [[./assets/screen.png]]
-
-* Overview
-
-This repository contains my personal dotfiles for managing system configurations across various applications and environments. The configurations are designed to be deployed using GNU Stow for easy management and portability.
-
-

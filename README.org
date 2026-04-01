@@ -1,5 +1,7 @@
 #+TITLE: BSPWM Dots
-#+AUTHOR: lxde
-#+OPTIONS: toc:2 num:nil
+#+AUTHOR: aellas
+#+DESCRIPTION: My personal bspwm dotfiles
+#+STARTUP: showeverything
 
 [[./assets/screen.png]]
+

@@ -2,6 +2,8 @@
 #+AUTHOR: lxde
 #+OPTIONS: toc:2 num:nil
 
+![Image](/assets/screen.png?raw=true "Screen")
+
 * Overview
 
 This repository contains my personal dotfiles for managing system configurations across various applications and environments. The configurations are designed to be deployed using GNU Stow for easy management and portability.

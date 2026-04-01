@@ -1,0 +1,68 @@
+{
+    "manifest_version": 3,
+    "name": "Tokyo Night Storm Theme",
+    "version": "1.0.0",
+    "description": "Elegant dark theme inspired by Tokyo's night storms with custom colors for fonts and search bar.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png",
+        "256": "icon256.png",
+        "512": "icon512.png"
+    },
+    "theme": {
+        "colors": {
+            "frame": [19, 20, 28],
+            "toolbar": [19, 20, 28],
+            "ntp_text": [210, 212, 222],
+            "ntp_link": [125, 207, 255],
+            "ntp_section": [19, 20, 28],
+            "button_background": [90, 100, 141],
+            "toolbar_button_icon": [210, 212, 222],
+            "toolbar_text": [210, 212, 222],
+            "omnibox_background": [26, 27, 38],
+            "omnibox_text": [210, 212, 222],
+            "tab_text": [210, 212, 222],
+            "tab_background_text": [210, 212, 222],
+            "bookmark_text": [210, 212, 222],
+            "frame_inactive": [19, 20, 28],
+            "frame_incognito": [36, 40, 59],
+            "frame_incognito_inactive": [41, 46, 66],
+            "background_tab": [26, 27, 38],
+            "background_tab_inactive": [19, 20, 28],
+            "background_tab_incognito": [36, 40, 59],
+            "background_tab_incognito_inactive": [31, 32, 46],
+            "tab_background_text_inactive": [210, 212, 222],
+            "tab_background_text_incognito": [210, 212, 222],
+            "tab_background_text_incognito_inactive": [210, 212, 222],
+            "bookmark_bar_background": [19, 20, 28],
+            "bookmark_bar_text": [210, 212, 222],
+            "ntp_background": [19, 20, 28],
+            "ntp_header": [36, 40, 59],
+            "control_background": [19, 20, 28],
+            "button_background_hover": [41, 46, 66],
+            "button_background_active": [187, 154, 247],
+            "toolbar_button_icon_highlight": [187, 154, 247],
+            "toolbar_button_icon_highlight_active": [125, 207, 255],
+            "popup": [19, 20, 28],
+            "popup_text": [210, 212, 222],
+            "popup_border": [36, 40, 59],
+            "popup_highlight": [187, 154, 247],
+            "popup_highlight_text": [19, 20, 28],
+            "toolbar_top_separator": [36, 40, 59],
+            "toolbar_bottom_separator": [36, 40, 59]
+        },
+        "tints": {
+            "buttons": [0.33, 0.5, 0.47],
+            "frame": [-1, -1, -1],
+            "frame_inactive": [-1, -1, -1],
+            "frame_incognito": [-1, -1, 0.2],
+            "frame_incognito_inactive": [-1, -1, 0.3],
+            "background_tab": [-1, -1, 0.5]
+        },
+        "properties": {
+            "ntp_background_alignment": "center",
+            "ntp_background_repeat": "no-repeat"
+        }
+    }
+}

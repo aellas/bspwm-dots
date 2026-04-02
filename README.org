@@ -9,9 +9,9 @@
 - Distro: Artix
 - Init: OpenRC
 - Display Server: Xlibre
+- WM: BSPWM
 - Bar: Polybar
 - Notifications: Dunst
-- WM: BSPWM
 - Editor: Doom Emacs
 - File-manager: Yazi / Nemo
 - Launcher: Rofi

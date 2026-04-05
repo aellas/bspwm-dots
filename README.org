@@ -8,6 +8,7 @@
 * Software
 - Distro: Artix
 - Init: OpenRC
+- Kernel: CachyOS
 - Display Server: Xlibre
 - WM: BSPWM
 - Bar: Polybar

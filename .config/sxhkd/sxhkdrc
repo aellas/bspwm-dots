@@ -19,13 +19,10 @@ super + n
     kitty -e joshuto 
 
 super + shift + n
-      GDK_SCALE=2.0 nautilus 
+     dolphin      
 
 super + e
       emacsclient -c -a emacs
-
-super + shift + b
-    floorp
 
 super + b
     brave --force-device-scale-factor=1.6

@@ -3,7 +3,7 @@
 #+DESCRIPTION: My personal bspwm dotfiles
 #+STARTUP: showeverything
 
-[[./assets/screen.png]]
+[[./assets/desktop.png]]
 
 * Software
 - Distro: Artix

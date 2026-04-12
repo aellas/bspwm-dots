@@ -1,6 +1,3 @@
-#
-# CUSTOM hotkeys
-#
 
 # --------- SXHKD (SHORTCUTS MANAGER) ---------
 
@@ -15,20 +12,23 @@ super + Return
 	kitty
 
 super + shift + Return
-    tdrop -ma -w 60% -h 40% -x 20% -y 30% kitty
+    tdrop -ma -w 60% -h 20% -x 20% -y 30% kitty
 
 # filemanager
 super + n
-    kitty -e yazi
+    kitty -e joshuto 
 
 super + shift + n
-     nemo 
+      GDK_SCALE=2.0 nautilus 
 
 super + e
       emacsclient -c -a emacs
 
-super + b
+super + shift + b
     floorp
+
+super + b
+    brave --force-device-scale-factor=1.6
 
 super + space
 	rofi -modi drun -show drun -width 5
@@ -40,10 +40,10 @@ super + m
      feishin 
 
 super + d
-      element-desktop
+      brave --app=https://app.cinny.in/
       
 super + shift + m
- helium-browser --app=https://music.youtube.com/
+      brave --app=https://music.youtube.com/
 
 super + shift + p
   ./.config/bspwm/scripts/power.sh
@@ -57,33 +57,25 @@ super + j
 super + p
       ./.config/bspwm/scripts/launch.sh
 
-super + g
-      gnome-boxes
-
 alt + Tab
         skippy-xd --paging
 
 super + l
     bsp-layout next --layouts monocle,tall,tiled && notify-send "BSP Layout Changed" "$(bspc query -d | xargs bsp-layout get)"
 
+super + i
+      freecad
+      
 super + k
-      bambu-studio
+     bambu-studio
+
+super + h 
+      clipton
     # --------- SCREENSHOTS ---------
 
 # screenshot (entire screen)
 Home
-    flameshot full 
-# screenshot (window)
-super + Home
-      flameshot region
-# screenshot (region)
-super + shift + S
-    import /tmp/screenshot.png && cat /tmp/screenshot.png | xclip -sel clip -t image/png
-
-# system shutdown
-super + alt + t
-    ~/.config/polybar/scripts/theme-swap.sh
-
+    ~/.config/bspwm/scripts/screenshot.sh
 
 # --------- PULSEMIXER (AUDIO MANAGER) ---------
 
@@ -92,11 +84,11 @@ ctrl + alt + v
     bspc rule -a \* -o state=floating ; pavucontrol # kitty -e /bin/zsh -c pulsemixer
 
 # pulsemixer volume UP (+5)
-super + F8
+super + F3
 	pulsemixer --change-volume +5
 
 # pulsemixer volume DOWN (-5)
-super + F7
+super + F2
 	pulsemixer --change-volume -5
 
 # pulsemixer volume MUTE (0)
@@ -201,7 +193,6 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}' --follow
 
-
 ctrl + alt + {Left,Right}
     bspc node -d {prev,next} -f
 
@@ -258,6 +249,6 @@ XF86AudioMute
 
 # Brightness
 XF86MonBrightnessUp
-    brightnessctl set +1%
+    brightnessctl set +5%
 XF86MonBrightnessDown
-    brightnessctl set 1%
+    brightnessctl set 5%

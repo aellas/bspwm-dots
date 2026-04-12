@@ -1,7 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n] confirmations, etc.) must go above this block; everything else may go below.
-
-# Configuration and plugins loading that doesn't require console input
 export ZSH="$HOME/.oh-my-zsh"
 
 setopt globdots
@@ -41,15 +37,8 @@ alias ll='eza -Ahl --color=always --group-directories-first --icons'
 alias lt='eza -aT --color=always --group-directories-first'
 alias jctl="journalctl -p 3 -xb"
 
-# ssh
-alias sernix="ssh array@serfor"
 alias serfor="ssh array@serfor"
-alias pideb="ssh array@pideb"
-
-alias ff="fastfetch"
-alias paru="pikaur"
-alias yay="pikaur"
-
+alias pide="ssh array@pide"
 
 eval "$(zoxide init zsh)"
 

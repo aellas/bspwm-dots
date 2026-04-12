@@ -1,17 +1,29 @@
 #!/usr/bin/env sh
 
-pipewire &
-wireplumber &
-pipewire-pulse &
-xrandr --output DP-1 --mode 1920x1080 --rate 239.76 &
-xrandr --output eDP-1 --mode 1920x1080 --rate 60.00 &
-xrandr --output DP-2 --off &
-xrandr --output HDMI-1 --off &
-sxhkd &
-xclip &
-picom &
-feh --bg-scale /home/array/bspwm-dots/wallpapers/black-cat-anime-moon-night-scenery-4k-wallpaper-uhdpaper.com-140@5@l.jpg &
-xsetroot -cursor_name left_ptr &
-lxpolkit &
-brightnessctl s 24242 &
-skippy-xd --start-daemon &
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_THEME=Oxygen_White
+export XCURSOR_SIZE=34
+export QT_SCALE_FACTOR=1.5
+export GDK_SCALE=1.5
+export GDK_DPI_SCALE=1.25
+
+run() {
+  pgrep -x "$1" > /dev/null || "$@" &
+}
+
+xsetroot -cursor_name left_ptr
+
+xrandr --output eDP-1 --mode 2560x1600
+xrandr --output DP-2 --mode 1920x1080 --rate 239.6888
+xrandr --output HDMI-1 --off
+
+run sxhkd
+run picom
+run lxpolkit
+run skippy-xd --start-daemon
+run nitrogen --restore
+run clipton watcher
+run polybar
+run dunst
+
+ssh -Nf pide-podman

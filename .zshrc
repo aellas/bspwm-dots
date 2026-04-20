@@ -32,6 +32,7 @@ alias cd="z"
 alias dots="z ~/dotfiles"
 alias cat="bat"
 alias update="sudo pacman -Syuu"
+alias remove-orphan='sudo pacman -Rns $(pacman -Qtdq)'
 alias ls='eza -A --color=always --group-directories-first --icons'
 alias ll='eza -Ahl --color=always --group-directories-first --icons'
 alias lt='eza -aT --color=always --group-directories-first'

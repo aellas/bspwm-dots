@@ -1,4 +1,5 @@
 
+    #tdrop -ma -w 60% -h 20% -x 40% -y 30% kitty
 # --------- SXHKD (SHORTCUTS MANAGER) ---------
 
 # sxhkd reload keybindings:
@@ -11,21 +12,24 @@ super + Escape
 super + Return
 	kitty
 
+super + shift + t
+      kitty -e tmux
+      
 super + shift + Return
-    tdrop -ma -w 60% -h 20% -x 20% -y 30% kitty
+    emacs --eval "(vterm)"
 
 # filemanager
 super + n
-    kitty -e joshuto 
+    kitty -e joshuto
 
 super + shift + n
-     dolphin      
+      nautilus
 
 super + e
       emacsclient -c -a emacs
 
 super + b
-    brave --force-device-scale-factor=1.6
+    helium-browser --force-device-scale-factor=1.6
 
 super + space
 	rofi -modi drun -show drun -width 5
@@ -34,22 +38,22 @@ super + c
         xcolor -s
         
 super + m
-     feishin 
+     GDK_SCALE=2.0 feishin 
 
 super + d
-      brave --app=https://app.cinny.in/
+     GDK_SCALE=2.0 element-desktop 
+
+super + w
+      helium-browser --app=https://web.whatsapp.com/ --force-device-scale-factor=1.6
       
 super + shift + m
-      brave --app=https://music.youtube.com/
+      helium-browser --app=https://music.youtube.com/ --force-device-scale-factor=1.6
 
 super + shift + p
   ./.config/bspwm/scripts/power.sh
 
 super + s
       steam
-
-super + j
-      env _JAVA_AWT_WM_NONREPARENTING=1  bolt-launcher
 
 super + p
       ./.config/bspwm/scripts/launch.sh
@@ -68,10 +72,16 @@ super + k
 
 super + h 
       clipton
+
+super + u
+      QT_FONT_DPI=163 QT_SCREEN_SCALE_FACTORS=1 QT_SCALE_FACTOR=1 onlyoffice-desktopeditors
+
+super + shift + x
+      xkill
     # --------- SCREENSHOTS ---------
 
 # screenshot (entire screen)
-Home
+super + Home
     ~/.config/bspwm/scripts/screenshot.sh
 
 # --------- PULSEMIXER (AUDIO MANAGER) ---------

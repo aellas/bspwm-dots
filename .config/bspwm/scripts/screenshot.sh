@@ -17,7 +17,7 @@ CHOICE=$(printf "Fullscreen\n  Region\n  Window" \
            -no-custom)
 
 case "$CHOICE" in
-    "  Fullscreen")
+    "Fullscreen")
         # Small delay so the rofi window has time to close
         sleep 0.3
         scrot "$OUTPUT"

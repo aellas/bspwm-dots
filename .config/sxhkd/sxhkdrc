@@ -65,10 +65,10 @@ super + l
     bsp-layout next --layouts monocle,tall,tiled && notify-send "BSP Layout Changed" "$(bspc query -d | xargs bsp-layout get)"
 
 super + i
-      freecad
+     GDK_SCALE=2.0 blender 
       
 super + k
-     bambu-studio
+     GDK_SCALE=2.0 GDK_DPI_SCALE=0.8 bambu-studio
 
 super + h 
       clipton

@@ -1,0 +1,11 @@
+background = 111117
+foreground = cbd0ec
+keybind = ctrl+z=close_surface
+keybind = ctrl+d=new_split:right
+
+font-family = IosevkaTerm Nerd Font
+font-size = 20
+theme = TokyoNight Night 
+window-decoration = none
+confirm-close-surface = false
+

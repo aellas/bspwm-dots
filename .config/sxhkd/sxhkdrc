@@ -1,27 +1,21 @@
 
-    #tdrop -ma -w 60% -h 20% -x 40% -y 30% kitty
-# --------- SXHKD (SHORTCUTS MANAGER) ---------
-
-# sxhkd reload keybindings:
+# Restart Configuration
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# --------- GENERAL APPS ---------
-
+super + alt + m
+      ./.config/bspwm/scripts/laptop.sh
 # terminal emulator
 super + Return
-	kitty
+      ghostty --gtk-single-instance=true
+
 
 super + shift + t
-      kitty -e tmux
-      
-super + shift + Return
-    emacs --eval "(vterm)"
+      ghostty -e tmux
 
-# filemanager
 super + n
-    kitty -e joshuto
-
+    ghostty -e joshuto
+    
 super + shift + n
       nautilus
 
@@ -31,8 +25,14 @@ super + e
 super + b
     helium-browser --force-device-scale-factor=1.6
 
+super + shift + b
+      helium-browser --incognito --force-device-scale-factor=1.6
+
 super + space
-	rofi -modi drun -show drun -width 5
+	rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons
+
+super + v
+      ghostty -e vm-curator 
 
 super + c
         xcolor -s
@@ -78,6 +78,22 @@ super + u
 
 super + shift + x
       xkill
+
+# Scratchpads
+super + shift + c
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e bluetui
+super + shift + i
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e nmtui
+super + shift + s
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e wiremix
+super + shift + f
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e pacseek
+super + shift + j
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e jolt
+super + shift + g
+       tdrop -ma -w 60% -h 60% -x 20% -y 20% ghostty -e gotop
+super + shift + Return
+      tdrop -ma -w 24% -h 23% -x 38% -y 38% ghostty
     # --------- SCREENSHOTS ---------
 
 # screenshot (entire screen)
@@ -88,7 +104,7 @@ super + Home
 
 # open pulsemixer
 ctrl + alt + v
-    bspc rule -a \* -o state=floating ; pavucontrol # kitty -e /bin/zsh -c pulsemixer
+    bspc rule -a \* -o state=floating ; pavucontrol # ghostty -e /bin/zsh -c pulsemixer
 
 # pulsemixer volume UP (+5)
 super + F3

@@ -42,7 +42,7 @@
         {
             "type": "terminal",
             "key": " ",
-            "format": "{1}",
+            "format": "{5}",
         },
         {
             "type": "shell",

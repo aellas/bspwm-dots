@@ -12,7 +12,6 @@ run() {
 
 xsetroot -cursor_name left_ptr
 xrandr --output eDP-1 --scale 1x1 --mode 2560x1600 --rate 60.00
-#xrandr --output HDMI-1 --mode 1920x1080 --rate 239.76
 run sxhkd
 run picom
 run skippy-xd --start-daemon
@@ -23,6 +22,5 @@ run dunst
 run lxpolkit
 run xmodmap -e "keycode 112 = NoSymbol"
 run brightnessctl set 60%
-run  ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false
 eval $(/usr/bin/gnome-keyring-daemon --start --daemonize --components=secrets,pkcs11)
 export SSH_AUTH_SOCK

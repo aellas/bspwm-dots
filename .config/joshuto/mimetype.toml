@@ -13,9 +13,7 @@ image_default = [
 ]
 
 text_default = [
-  { command = "emacs", args = [
-    "-nw",
-  ] },
+  { command = "emacs", fork = true, silent = true },
 ]
 video_default = [
     { command = "mpv", args = ["--"], fork = true, silent = true },
@@ -132,17 +130,53 @@ vim.inherit = "text_default"
 xml.inherit = "text_default"
 yaml.inherit = "text_default"
 yml.inherit = "text_default"
-nix.inherit = "text_default"
 
 # Archive formats
-zip.app_list = [{ command = "unzip", args = ["-q"], silent = true }]
-gz.app_list  = [{ command = "tar", args = ["-xzf"], silent = true }]
-tar.app_list = [{ command = "tar", args = ["-xf"],  silent = true }]
-tgz.app_list = [{ command = "tar", args = ["-xzf"], silent = true }]
-bz2.app_list = [{ command = "tar", args = ["-xjf"], silent = true }]
-xz.app_list  = [{ command = "tar", args = ["-xJf"], silent = true }]
-7z.app_list  = [{ command = "7z",  args = ["x", "-bd"], silent = true }]
-rar.app_list = [{ command = "unrar", args = ["x", "-inul"], silent = true }]
+7z.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "7z", args = ["x"] }
+]
+
+bz2.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "tar", args = ["-xvjf"] }
+]
+
+gz.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "tar", args = ["-xvzf"] }
+]
+
+tar.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "tar", args = ["-xvf"] }
+]
+
+tgz.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "tar", args = ["-xvzf"] }
+]
+
+rar.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "unrar", args = ["x"] }
+]
+
+xz.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "tar", args = ["-xvJf"] }
+]
+
+zip.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "unzip" }
+]
+
+zst.app_list = [
+    { command = "file-roller", fork = true, silent = true },
+    { command = "zstd", args = ["-d"] }
+]
+
 # Misc formats
 aup.app_list = [
     { command = "audacity", fork = true, silent = true }

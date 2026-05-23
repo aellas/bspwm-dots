@@ -5,8 +5,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("ba98102679e7ed71a0b79c9a490328370b6b20537e04730bf0028bdd8a2418a9"
-     "8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a"
+   '("8d3ef5ff6273f2a552152c7febc40eabca26bae05bd12bc85062e2dc224cde9a"
      "02d422e5b99f54bd4516d4157060b874d14552fe613ea7047c4a5cfa1288cf4f"
      "f1e8339b04aef8f145dd4782d03499d9d716fdc0361319411ac2efc603249326"
      "fd22a3aac273624858a4184079b7134fb4e97104d1627cb2b488821be765ff17"
@@ -24,8 +23,7 @@
      "aec7b55f2a13307a55517fdf08438863d694550565dee23181d2ebd973ebd6b8"
      "45333f79e4a7fdeff9924d5b6658f84fb468ef38f749455e5b58ba4154782007" default))
  '(package-selected-packages
-   '(catppuccin-theme easy-hugo ement emms git-cliff kuronami-theme org-bullets
-     yasnippet)))
+   '(easy-hugo emms git-cliff kuronami-theme org-bullets yasnippet)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

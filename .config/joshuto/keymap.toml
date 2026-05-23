@@ -2,8 +2,8 @@
 
 keymap = [
   { keys = ["escape"], commands = ["escape"] },
-  { keys = ["ctrl+shift+t"], commands = ["new_tab"] },
-{ keys = ["alt+t"], commands = ["new_tab --cursor"] },
+  { keys = ["ctrl+t"], commands = ["new_tab"] },
+  { keys = ["alt+t"], commands = ["new_tab --cursor"] },
   { keys = ["T"], commands = ["new_tab --current"] },
   { keys = ["W"], commands = ["close_tab"] },
   { keys = ["ctrl+w"], commands = ["close_tab"] },
@@ -66,6 +66,7 @@ keymap = [
 
   { keys = ["c", "d"], commands = [":cd "] },
   { keys = ["y", "y"], commands = ["copy_files"] },
+  { keys = ["c", "f"], commands = ["cut_files"] },
   { keys = ["y", "n"], commands = ["copy_filename"] },
   { keys = ["y", "."], commands = ["copy_filename_without_extension"] },
   { keys = ["y", "p"], commands = ["copy_filepath"] },
@@ -86,8 +87,8 @@ keymap = [
 
   { keys = ["f", "t"], commands = [":touch "] },
 
-  { keys = [" "], commands = ["select --toggle=true"] },
-  { keys = ["t"], commands = ["select --all=true --toggle=true"] },
+  { keys = ["s", "s"], commands = ["select --toggle=true"] },
+  { keys = ["s", "a"], commands = ["select --all=true --toggle=true"] },
   { keys = ["V"], commands = ["toggle_visual"] },
 
   { keys = ["w"], commands = ["show_tasks --exit-key=w"] },
@@ -114,7 +115,7 @@ keymap = [
   { keys = ["s", "l"], commands = ["sort lexical"] },
   { keys = ["s", "m"], commands = ["sort mtime"] },
   { keys = ["s", "n"], commands = ["sort natural"] },
-  { keys = ["s", "s"], commands = ["sort size"] },
+  { keys = ["s", "o"], commands = ["sort size"] },
   { keys = ["s", "e"], commands = ["sort ext"] },
 
   { keys = ["m", "s"], commands = ["linemode size"] },
@@ -130,7 +131,6 @@ keymap = [
   { keys = ["g", "e"], commands = ["cd /etc"] },
   { keys = ["g", "h"], commands = ["cd ~/"] },
   { keys = ["?"], commands = ["help"] },
-  { keys = ["g", "t"], commands= ["cd ~/.local/share/Trash/files"]},
 ]
 
 [task_view]

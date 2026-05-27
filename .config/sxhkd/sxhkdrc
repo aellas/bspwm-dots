@@ -11,40 +11,28 @@ super + shift + t
       wezterm -e tmux
 
 super + n
-    wezterm -e joshuto
+    wezterm -e /home/array/.local/bin/joshuto
     
 super + shift + n
       nautilus
 
 super + e
-      emacsclient -c -a emacs
+      emacsclient -c -a emacs-gtk+x11
 
 super + b
-    helium-browser --force-device-scale-factor=1.6
-
-super + alt + b
-      helium-browser --incognito --force-device-scale-factor=1.6
+    floorp 
 
 super + space
 	rofi -show drun -modi drun -line-padding 4 -hide-scrollbar -show-icons
 
-super + v
-      wezterm -e vm-curator 
-
 super + c
-        xcolor -s
+        ~/.cargo/bin/xcolor -s
         
 super + m
-     feishin 
+     feishin --ozone-platform=x11 
 
 super + d
-      equibop 
-
-super + w
-      helium-browser --app=https://web.whatsapp.com/ --force-device-scale-factor=1.6
-      
-super + shift + m
-      helium-browser --app=https://music.youtube.com/ --force-device-scale-factor=1.6
+      discord 
 
 super + shift + p
   ./.config/bspwm/scripts/power.sh
@@ -61,34 +49,22 @@ alt + Tab
 super + l
     bsp-layout next --layouts monocle,tall,tiled && notify-send "BSP Layout Changed" "$(bspc query -d | xargs bsp-layout get)"
 
-super + i
-      blender 
-      
 super + k
-      bambu-studio
-
-super + h 
-      clipton
+      /home/array/AppImages/OrcaSlicer.AppImage
 
 super + u
-      QT_FONT_DPI=163 QT_SCREEN_SCALE_FACTORS=1 QT_SCALE_FACTOR=1 onlyoffice-desktopeditors
+      flatpak run org.onlyoffice.desktopeditors
 
+super + shift + u
+      QT_FONT_DPI=163 QT_SCREEN_SCALE_FACTORS=1 QT_SCALE_FACTOR=1 flatpak run com.collaboraoffice.Office
 super + shift + x
       xkill
 
 # Scratchpads
 super + shift + b
-      tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e bluetui
-super + shift + n
-      tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e nmtui
+      tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e ~/.cargo/bin/bluetui 
 super + shift + s
       tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e wiremix
-super + shift + f
-      tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e pacseek
-super + shift + a
-      tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e jolt
-super + shift + i
-       tdrop -ma -w 60% -h 60% -x 20% -y 20% wezterm start --always-new-process --class tdrop -e gotop
 super + shift + Return
     tdrop -ma -w 24% -h 24% -x 38% -y 38% wezterm start --always-new-process --class tdrop
     # --------- SCREENSHOTS ---------

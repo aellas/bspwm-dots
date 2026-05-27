@@ -3,7 +3,7 @@
       user-mail-address "zacpi@pm.me")
 
 ;; Font settings
-(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 18))
+(setq doom-font (font-spec :family "Iosevka Nerd Font" :size 26))
 (setq doom-theme 'doom-tokyo-night)
 ;;(load-theme 'noctalia t)
 

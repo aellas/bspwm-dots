@@ -17,7 +17,7 @@ binds {
     Mod+E             { spawn "bash" "-c" "emacsclient -c -a emacs"; }
     Mod+M             { spawn "feishin"; }
     Mod+Shift+M       { spawn "wezterm" "-e" "subtui"; }
-    MOD+S             { spawn "steam"; }
+    MOD+S             { spawn "steam -system-composer"; }
     MOD+SHIFT+P             { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
     MOD+N             { spawn "wezterm" "-e" "/home/array/.local/bin/joshuto"; }
     MOD+SHIFT+N        {spawn "nautilus"; }

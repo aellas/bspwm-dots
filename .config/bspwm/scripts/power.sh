@@ -6,13 +6,13 @@ chosen=$(echo -e "$options" | rofi -dmenu -theme-str 'window { width: 16%; }' -n
 
 case "$chosen" in
 " Shutdown")
-    loginctl poweroff 0
+    systemctl poweroff
     ;;
 " Reboot")
-    loginctl reboot
+    systemctl reboot
     ;;
 "󰒲 Suspend")
-    loginctl suspend
+    systemctl suspend
     ;;
 " Lock")
     betterlockscreen -l
